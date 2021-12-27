@@ -1,10 +1,29 @@
-﻿#include <iostream>
+﻿/**
+ *
+ * Copyright (c) 2021, whalec-io
+ *
+ * Distributed under MIT license, or public domain if desired and
+ * recognized in your jurisdiction.
+ *
+ *    https://whalec.tistory.com / https://github.com/whalec-io
+ *
+ */
+
+#include <iostream>
 #include <string>
 
 #include "json/json.h"
 
 int main()
 {
+    /*
+      {
+        "integer": 1,
+        "floating_point": 1.0,
+        "boolean": true,
+        "string": "whaleC"
+      }
+    */
     std::string json_data = "{\"integer\":1,\"floating_point\":1.0,\"boolean\":true,\"string\":\"whaleC\"}";
 
     Json::CharReaderBuilder builder;
